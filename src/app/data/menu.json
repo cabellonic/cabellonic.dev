@@ -1,0 +1,25 @@
+[
+	{
+		"title": "home",
+		"url": "/",
+		"icon": "house-chimney"
+	},
+	{
+		"title": "portfolio",
+		"url": "/portfolio",
+		"icon": "laptop-code",
+		"partiallyActive": true
+	},
+	{
+		"title": "blog",
+		"url": "/blog",
+		"icon": "pen",
+		"partiallyActive": true
+	},
+	{
+		"title": "contact",
+		"url": "/contact",
+		"icon": "envelope",
+		"partiallyActive": true
+	}
+]

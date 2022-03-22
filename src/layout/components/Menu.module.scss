@@ -1,0 +1,93 @@
+.menu {
+	margin-left: auto;
+	display: none;
+
+	@include md() {
+		display: block;
+	}
+}
+
+.mobile_menu__header {
+	display: flex;
+	color: $clr-text-accent;
+	padding: $spacing-2 $spacing-4;
+	min-height: $header;
+	align-items: center;
+}
+
+.menu_item {
+	margin-right: $spacing-2;
+	padding: $spacing-3;
+	transition: background-color 0.2s ease-in-out;
+	border-radius: $br-discrete;
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+
+	&:hover,
+	&.active {
+		background-color: $clr-primary-dkr;
+	}
+}
+
+.mobile_menu {
+	position: fixed;
+	top: 0;
+	left: -$aside;
+	width: $aside;
+	height: 100vh;
+	z-index: $z-menu;
+	background-color: $clr-primary;
+	background: linear-gradient(45deg, $clr-primary-dk 0%, $clr-primary-lt 100%);
+	display: flex;
+	flex-flow: column;
+	transition: left 0.2s ease-in-out;
+
+	&.show {
+		left: 0;
+	}
+}
+
+.mobile_menu_item {
+	display: block;
+	width: 100%;
+	padding: $spacing-3 $spacing-4;
+	color: $clr-text-accent;
+	text-decoration: none;
+	font-size: $fs-h6;
+	transition: background-color 0.2s ease-in-out;
+	border-bottom: 1px solid $clr-primary-dk;
+
+	&:hover,
+	&.active {
+		background-color: $clr-primary-dkr;
+	}
+}
+
+.icon {
+	margin-right: $spacing-4;
+}
+
+.mobile_menu_footer {
+	padding: $spacing-4;
+	color: $clr-text-accent;
+	text-align: center;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $spacing-3;
+	margin: $spacing-2 0;
+	a {
+		color: inherit;
+		font-size: $fs-h3;
+		text-decoration: none;
+		transition: color 0.2s ease-in-out;
+
+		&:hover {
+			color: $clr-secondary-dkr;
+		}
+	}
+}

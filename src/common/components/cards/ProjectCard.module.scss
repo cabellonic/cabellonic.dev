@@ -1,0 +1,88 @@
+.project_card_wrapper {
+	&:not(:last-child) {
+		margin-bottom: $spacing-10;
+	}
+	@include sm() {
+		&:nth-child(2n) {
+			a {
+				flex-flow: row-reverse;
+			}
+		}
+	}
+}
+
+.project_card {
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: $spacing-4;
+	background-color: $clr-secondary-lt;
+	border-radius: $br-round;
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+	transition: background-color 0.2s ease-in-out;
+
+	&:hover {
+		background-color: $clr-secondary;
+	}
+
+	& .project_thumbnail img {
+		transition: transform 0.2s ease-in-out;
+	}
+
+	&:hover .project_thumbnail img {
+		transform: scale(1.05);
+	}
+}
+
+.project_thumbnail {
+	width: 100%;
+	height: 250px;
+	border-radius: $br-round;
+
+	@include sm() {
+		width: calc(280px - $spacing-2);
+		height: 250px;
+	}
+
+	@include md() {
+		width: calc(350px - $spacing-2);
+		height: 300px;
+	}
+
+	@include lg() {
+		width: calc(400px - $spacing-2);
+	}
+}
+
+.project_details {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: $spacing-4;
+
+	@include sm() {
+		margin-top: 0;
+		width: calc(100% - 280px - $spacing-2);
+	}
+
+	@include md() {
+		width: calc(100% - 350px - $spacing-2);
+	}
+
+	@include lg() {
+		width: calc(100% - 400px - $spacing-2);
+	}
+}
+
+.project_title {
+	margin: 0 0 $spacing-4 0;
+}
+
+.project_description {
+	margin: 0;
+}

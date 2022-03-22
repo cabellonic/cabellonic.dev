@@ -1,0 +1,74 @@
+[
+	{
+		"bricks": [
+			{
+				"tech": "JavaScript",
+				"level": 90
+			},
+			{
+				"tech": "TypeScript",
+				"level": 85
+			}
+		]
+	},
+	{
+		"bricks": [
+			{
+				"tech": "React",
+				"level": 90
+			}
+		]
+	},
+	{
+		"bricks": [
+			{
+				"tech": "Gatsby.js",
+				"level": 85
+			},
+			{
+				"tech": "Next.js",
+				"level": 80
+			}
+		]
+	},
+	{
+		"bricks": [
+			{
+				"tech": "HTML & CSS",
+				"level": 95
+			}
+		]
+	},
+	{
+		"bricks": [
+			{
+				"tech": "Sass",
+				"level": 90
+			},
+			{
+				"tech": "PostCSS",
+				"level": 80
+			}
+		]
+	},
+	{
+		"bricks": [
+			{
+				"tech": "Node.js",
+				"level": 70
+			}
+		]
+	},
+	{
+		"bricks": [
+			{
+				"tech": "Express.js",
+				"level": 60
+			},
+			{
+				"tech": "Socket.io",
+				"level": 50
+			}
+		]
+	}
+]

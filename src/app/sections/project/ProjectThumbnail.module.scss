@@ -1,0 +1,11 @@
+.project_thumbnail_wrapper {
+	max-width: $wrapper;
+	margin: 0 auto;
+	padding: 0 $spacing-4;
+}
+
+.project_thumbnail {
+	width: 100%;
+	border-radius: $br-discrete;
+	border: 3px solid $clr-secondary-lt;
+}

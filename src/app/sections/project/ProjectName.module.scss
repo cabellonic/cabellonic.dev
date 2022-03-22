@@ -1,0 +1,12 @@
+.project_header {
+	max-width: $wrapper;
+	margin: 0 auto;
+	padding: $spacing-4;
+}
+
+.project_name {
+	font-size: $fs-h1;
+	font-weight: Bold;
+	margin-bottom: 0 0 $spacing-4 0;
+	text-align: center;
+}

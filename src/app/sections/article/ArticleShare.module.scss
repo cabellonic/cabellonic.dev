@@ -1,0 +1,86 @@
+.share {
+	max-width: calc($article-wrapper - $spacing-4 * 2);
+	width: calc(100% - $spacing-4 * 2);
+	margin: 0 auto $spacing-8 auto;
+	padding: $spacing-4 0 0 0;
+	border-top: 1px solid $clr-secondary-dk;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.share_title {
+	font-size: $fs-h4;
+	margin-bottom: $spacing-4;
+	font-weight: bold;
+}
+
+.share_buttons {
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+	border-radius: $br-discrete;
+	overflow: hidden;
+	width: fit-content;
+	margin: 0 auto;
+
+	@include md() {
+		flex-flow: row;
+		width: 100%;
+	}
+}
+
+.share_buttons a {
+	text-decoration: none;
+	color: $clr-text-accent;
+	display: flex;
+	width: fit-content;
+	align-items: center;
+	padding: $spacing-2;
+	margin: $spacing-1;
+	border-radius: $br-discrete;
+	transition: background-color 0.2s ease-in-out;
+
+	&[data-social='twitter'] {
+		background-color: $clr-twitter;
+		&:hover {
+			background-color: lighten($clr-twitter, 15%);
+		}
+	}
+	&[data-social='facebook'] {
+		background-color: $clr-facebook;
+		&:hover {
+			background-color: lighten($clr-facebook, 15%);
+		}
+	}
+	&[data-social='telegram'] {
+		background-color: $clr-telegram;
+		&:hover {
+			background-color: lighten($clr-telegram, 15%);
+		}
+	}
+	&[data-social='whatsapp'] {
+		background-color: $clr-whatsapp;
+		&:hover {
+			background-color: lighten($clr-whatsapp, 15%);
+		}
+	}
+	&[data-social='linkedin'] {
+		background-color: $clr-linkedin;
+		&:hover {
+			background-color: lighten($clr-linkedin, 15%);
+		}
+	}
+
+	@include md() {
+		width: calc(100% / 4);
+		margin: 0;
+		border-radius: 0;
+	}
+}
+
+.icon {
+	margin-right: $spacing-2;
+	font-size: $fs-h5;
+}

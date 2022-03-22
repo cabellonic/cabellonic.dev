@@ -1,0 +1,14 @@
+.hit {
+	padding: $spacing-2;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $clr-secondary-dkr;
+	}
+
+	&:hover {
+		background-color: $clr-secondary-dk;
+	}
+}

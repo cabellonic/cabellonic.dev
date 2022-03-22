@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"paths": {
+			"@layout/*": ["layout/*"],
+			"@components/*": ["common/components/*"],
+			"@hooks/*": ["common/hooks/*"],
+			"@svg/*": ["common/svg/*"],
+			"@sections/*": ["app/sections/*"],
+			"@models/*": ["app/models/*"],
+			"@modules/*": ["modules/*"],
+			"@styles/*": ["app/styles/*"]
+		},
+		"target": "es6",
+		"module": "commonjs",
+		"jsx": "react",
+		"strict": true,
+		"noImplicitAny": false,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	}
+}

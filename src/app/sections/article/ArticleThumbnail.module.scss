@@ -1,0 +1,12 @@
+.article_thumbnail_wrapper {
+	width: 100%;
+	max-width: $wrapper;
+	margin: 0 auto;
+	padding: 0 $spacing-4;
+	border-radius: $br-discrete;
+}
+
+.article_thumbnail {
+	width: 100%;
+	border-radius: $br-discrete;
+}

@@ -1,0 +1,29 @@
+.article_header {
+	display: flex;
+	flex-direction: column;
+	max-width: $article-wrapper;
+	width: 100%;
+	margin: 0 auto;
+	padding: $spacing-4 $spacing-4 $spacing-8 $spacing-4;
+}
+
+.article_date {
+	display: flex;
+	flex-flow: wrap;
+	span {
+		margin: $spacing-2 $spacing-4 0 0;
+	}
+}
+
+.article_title {
+	margin: $spacing-4 0;
+	line-height: 1.2;
+	font-size: $fs-h2;
+	@include md() {
+		font-size: $fs-h1;
+	}
+}
+
+.article_excerpt {
+	margin: 0;
+}

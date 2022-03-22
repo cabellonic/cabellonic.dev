@@ -1,0 +1,23 @@
+.project_content {
+	max-width: $wrapper;
+	padding: 0 $spacing-4;
+	margin: 0 auto;
+
+	img {
+		border-radius: $br-discrete;
+	}
+
+	a {
+		color: $clr-primary-ltr;
+		font-weight: 600;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.project_content_title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: $spacing-4;
+}

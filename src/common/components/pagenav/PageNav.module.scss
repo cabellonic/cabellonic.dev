@@ -1,0 +1,24 @@
+.page_nav {
+	display: flex;
+	justify-content: space-between;
+	user-select: none;
+	margin-bottom: $spacing-8;
+}
+
+.page_nav__button {
+	padding: $spacing-2;
+	border-radius: $br-discrete;
+	background-color: $clr-secondary;
+	text-decoration: none;
+	color: $clr-primary;
+	transition: background-color 0.2s ease-in-out;
+
+	&:not(span):hover {
+		background-color: $clr-secondary-lt;
+	}
+}
+
+span.page_nav__button {
+	opacity: 0.5;
+	cursor: not-allowed;
+}

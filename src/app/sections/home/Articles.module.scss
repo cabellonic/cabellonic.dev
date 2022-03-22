@@ -1,0 +1,27 @@
+.articles {
+	padding: $spacing-18 0;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: $clr-secondary;
+}
+
+.articles_info {
+	padding: 0 $spacing-4 $spacing-12 $spacing-4;
+	max-width: 992px;
+	margin: $spacing-4 auto;
+	white-space: pre-wrap;
+	font-size: $fs-h6;
+}
+
+.articles_container {
+	display: flex;
+	flex-flow: wrap;
+	text-align: center;
+	padding: 0 $spacing-4;
+	max-width: 1400px;
+	justify-content: center;
+	overflow: hidden;
+}

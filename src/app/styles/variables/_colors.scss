@@ -1,0 +1,28 @@
+// Main Colors
+$clr-primary: rgb(50 59 108);
+$clr-primary-lt: lighten($clr-primary, 7.5%);
+$clr-primary-ltr: lighten($clr-primary, 15%);
+$clr-primary-dk: darken($clr-primary, 7.5%);
+$clr-primary-dkr: darken($clr-primary, 15%);
+
+$clr-secondary: #d6d9f0;
+$clr-secondary-lt: lighten($clr-secondary, 5%);
+$clr-secondary-ltr: lighten($clr-secondary, 8%);
+$clr-secondary-dk: darken($clr-secondary, 5%);
+$clr-secondary-dkr: darken($clr-secondary, 8%);
+
+// Text Colors
+$clr-text: #222;
+$clr-text-accent: #fdfdfd;
+
+// Extra
+$clr-transparent: rgba(0, 0, 0, 0);
+$clr-cta: #f1b335;
+$clr-cta-disabled: transparentize($clr-cta, 0.75);
+
+// Brand Colors
+$clr-twitter: #1da1f2;
+$clr-facebook: #3b5998;
+$clr-telegram: #0088cc;
+$clr-whatsapp: #128c7e;
+$clr-linkedin: #0077b5;

@@ -1,0 +1,13 @@
+.main_content {
+	margin: 0 auto;
+	min-height: calc(100vh - $header - $footer - $spacing-2);
+}
+
+.fullWidth {
+	width: 100%;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: $wrapper;
+}

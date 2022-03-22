@@ -1,0 +1,54 @@
+.project_details_wrapper {
+	display: flex;
+	flex-flow: wrap;
+	max-width: $wrapper;
+	padding: 0 $spacing-4;
+	margin: $spacing-4 auto;
+	gap: $spacing-4;
+
+	& > div {
+		background-color: $clr-secondary-lt;
+		padding: $spacing-3;
+	}
+}
+
+.project_details {
+	padding: $spacing-4;
+	display: flex;
+	flex-flow: wrap;
+}
+
+.project_details_title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: $spacing-4;
+}
+
+.project_date {
+	width: calc(50% - $spacing-2);
+}
+.project_duration {
+	width: calc(50% - $spacing-2);
+}
+
+.project_techs {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	gap: $spacing-2;
+}
+
+.project_link,
+.project_repository {
+	width: calc(50% - $spacing-2);
+	a {
+		display: flex;
+		align-items: center;
+		gap: $spacing-2;
+		color: $clr-primary-ltr;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

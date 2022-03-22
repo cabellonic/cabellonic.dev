@@ -1,0 +1,17 @@
+.featured_articles {
+	padding: $spacing-5 $spacing-2;
+	background-color: $clr-primary-lt;
+	color: $clr-text-accent;
+
+	@include md() {
+		padding: $spacing-8 $spacing-2;
+	}
+}
+
+.featured_articles__wrapper {
+	display: flex;
+	flex-flow: wrap;
+	max-width: $wrapper;
+	margin: 0 auto;
+	justify-content: center;
+}

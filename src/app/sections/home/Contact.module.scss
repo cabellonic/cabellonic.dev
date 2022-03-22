@@ -1,0 +1,90 @@
+.contact {
+	padding: $spacing-18 0;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	color: $clr-text-accent;
+	background-color: $clr-primary;
+	background: linear-gradient(12deg, $clr-primary-dkr 0%, $clr-primary 100%);
+}
+
+.contact_info {
+	width: 100%;
+	padding: 0 $spacing-4 $spacing-12 $spacing-4;
+	max-width: 992px;
+	margin: $spacing-4 auto;
+	white-space: pre-wrap;
+	font-size: $fs-h6;
+}
+
+.contact_form {
+	display: flex;
+	width: 100%;
+	max-width: 600px;
+	flex-direction: column;
+	text-align: left;
+	padding: 0 $spacing-4;
+
+	input,
+	textarea {
+		animation-fill-mode: backwards !important;
+		padding: $spacing-2;
+		font-family: inherit;
+		margin-bottom: $spacing-4;
+		border-radius: 4px;
+		border: none;
+		outline: none;
+		font-size: $fs-h6;
+		transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+		&:focus,
+		&:hover,
+		&:target {
+			box-shadow: 0 0 7px 0px $clr-secondary-dkr;
+			transform: scale(1.02);
+		}
+		&.error {
+			box-shadow: 0 0 8px 1px #c92a2a;
+			background-color: #f1dede;
+		}
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	button {
+		border-radius: $br-max;
+		border: none;
+		outline: none;
+		padding: $spacing-3 $spacing-5;
+		font-size: $fs-h6;
+		min-width: 120px;
+		width: fit-content;
+		margin: 0 auto;
+		background-color: $clr-cta;
+		color: $clr-text;
+		transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+		animation-fill-mode: backwards !important;
+		cursor: pointer;
+		user-select: none;
+
+		&:not(:disabled):hover {
+			background-color: darken($clr-cta, $amount: 10%);
+			transform: scale(1.05) !important;
+		}
+	}
+}
+
+.ryoukai {
+	text-align: center;
+	white-space: pre-wrap;
+}
+
+.shippaishita {
+	text-align: center;
+	color: #f1dede;
+	white-space: pre-wrap;
+}

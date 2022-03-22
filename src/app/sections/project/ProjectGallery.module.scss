@@ -1,0 +1,22 @@
+.project_gallery {
+	max-width: $wrapper;
+	padding: 0 $spacing-4;
+	margin: 0 auto $spacing-8 auto;
+}
+
+.project_gallery_title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: $spacing-4;
+}
+
+.project_gallery_image {
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+	border-radius: $br-discrete;
+	object-fit: cover;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}

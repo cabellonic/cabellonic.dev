@@ -1,0 +1,23 @@
+.button {
+	padding: $spacing-2 $spacing-4;
+	text-align: center;
+	background-color: $clr-primary;
+	cursor: pointer;
+	border-radius: $br-discrete;
+	transition: background-color 0.2s ease-in-out;
+	margin: $spacing-8 auto 0 auto;
+	min-width: 120px;
+	font-size: $fs-h6;
+	outline: none;
+	border: none;
+	user-select: none;
+
+	a {
+		color: $clr-text-accent;
+		text-decoration: none;
+	}
+
+	&:hover {
+		background-color: $clr-primary-ltr;
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"profile_title": "Desarrollador web Full-Stack",
+	"profile_description": "Soy un desarrollador web Full-Stack que vive en Mendoza, Argentina. \n Me apasiona programar y resolver problemas, soy disciplinado en lo que hago y siempre busco mejorar y aprender de los demás.",
+	"skills_info": "A lo largo del tiempo he profundizado en distintos lenguajes de programación (como Java, C#, C++ o Python), pero decidí listar mis ‘skills’ relacionadas al desarrollo Front-end y Back-end que más he pulido durante estos últimos dos años.",
+	"projects_info": "Estos son algunos de los proyectos personales en los que he trabajado recientemente. \n Dentro de cada página de proyecto escribí una breve descripción del mismo, los lenguajes, frameworks y diversas herramientas que utilicé para su desarrollo, así como el enlace al repositorio de GitHub.",
+	"articles_info": "Con frecuencia me gusta compartir a través de artículos las soluciones a las que llego cuando me enfrento a distintos problemas. \n Estos son algunos de los últimos que he escrito.",
+	"go_to_blog": "Ir a mi Blog",
+	"see_portfolio": "Ver mi Portfolio",
+	"keep_reading": "Seguir leyendo →"
+}

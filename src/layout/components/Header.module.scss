@@ -1,0 +1,51 @@
+.main_header {
+	position: sticky;
+	top: calc($header * -1 + 5px);
+	background: $clr-primary-lt;
+	background: linear-gradient(30deg, $clr-primary-lt 0%, $clr-primary 100%);
+	color: $clr-text-accent;
+	padding: $spacing-2 $spacing-4;
+	min-height: $header;
+	display: flex;
+	align-items: center;
+	z-index: $z-header;
+	box-shadow: 0px 2px 4px 0px $clr-primary-dkr;
+	transition: top 0.2s ease-in-out;
+	user-select: none;
+	&.show {
+		top: 0;
+	}
+}
+
+.main_header__wrapper {
+	display: flex;
+	align-items: center;
+	max-width: $wrapper;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.menu_toggler {
+	display: block;
+	font-size: $fs-h2;
+	margin-right: $spacing-4;
+
+	@include md() {
+		display: none;
+	}
+}
+
+.brand {
+	font-size: $fs-h4;
+	font-weight: 600;
+	text-decoration: none;
+	color: inherit;
+
+	@include md() {
+		font-size: $fs-h3;
+	}
+
+	@include lg() {
+		font-size: $fs-h2;
+	}
+}
