@@ -28,7 +28,6 @@ module.exports = {
 	},
 
 	plugins: [
-		`gatsby-plugin-gatsby-cloud`,
 		`gatsby-transformer-json`,
 		'gatsby-transformer-sharp',
 		{
