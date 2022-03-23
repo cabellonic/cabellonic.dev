@@ -11,10 +11,13 @@ type SeoProps = {
 
 const Seo: React.FC<SeoProps> = ({ seo }) => {
 	const site = (useStaticQuery(query) as ISite).site.siteMetadata
-	const siteUrl = process.env.SITE_URL
+	const siteUrl = site.siteUrl
 	const path =
 		typeof window !== 'undefined' ? siteUrl + window.location.pathname : ''
 	const imagePath = seo.image ? siteUrl + seo.image : siteUrl + site.image
+
+	console.log('PATH:', path)
+	console.log('IMAGE:', imagePath)
 
 	const metaTags = [
 		{
@@ -98,6 +101,7 @@ const query = graphql`
 		site {
 			siteMetadata {
 				site_name
+				siteUrl
 				image
 				author {
 					name

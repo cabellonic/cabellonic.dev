@@ -31,6 +31,7 @@ const ArticleShare: React.FC<ArticleShareProps> = ({ article }) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					data-social="twitter"
+					aria-label="Twitter"
 				>
 					<FontAwesomeIcon className={styles.icon} icon={['fab', 'twitter']} />
 					Twitter
@@ -40,6 +41,7 @@ const ArticleShare: React.FC<ArticleShareProps> = ({ article }) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					data-social="facebook"
+					aria-label="Facebook"
 				>
 					<FontAwesomeIcon className={styles.icon} icon={['fab', 'facebook']} />
 					Facebook
@@ -49,6 +51,7 @@ const ArticleShare: React.FC<ArticleShareProps> = ({ article }) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					data-social="telegram"
+					aria-label="Telegram"
 				>
 					<FontAwesomeIcon className={styles.icon} icon={['fab', 'telegram']} />
 					Telegram
@@ -58,6 +61,7 @@ const ArticleShare: React.FC<ArticleShareProps> = ({ article }) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					data-social="whatsapp"
+					aria-label="WhatsApp"
 				>
 					<FontAwesomeIcon className={styles.icon} icon={['fab', 'whatsapp']} />
 					WhatsApp
@@ -67,6 +71,7 @@ const ArticleShare: React.FC<ArticleShareProps> = ({ article }) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					data-social="linkedin"
+					aria-label="Linkedin"
 				>
 					<FontAwesomeIcon className={styles.icon} icon={['fab', 'linkedin']} />
 					Linkedin

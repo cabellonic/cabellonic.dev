@@ -27,6 +27,7 @@ const Social: React.FC<SocialProps> = ({ social, className }) => {
 					href={`https://www.linkedin.com/in/${linkedin}`}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="LinkedIn"
 				>
 					<FontAwesomeIcon icon={['fab', 'linkedin']} />
 				</a>
@@ -36,6 +37,7 @@ const Social: React.FC<SocialProps> = ({ social, className }) => {
 					href={`https://github.com/${github}`}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="GitHub"
 				>
 					<FontAwesomeIcon icon={['fab', 'github']} />
 				</a>
@@ -45,6 +47,7 @@ const Social: React.FC<SocialProps> = ({ social, className }) => {
 					href={`https://www.facebook.com/${facebook}`}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Facebook"
 				>
 					<FontAwesomeIcon icon={['fab', 'facebook']} />
 				</a>
@@ -54,6 +57,7 @@ const Social: React.FC<SocialProps> = ({ social, className }) => {
 					href={`https://www.twitter.com/${twitter}`}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Twitter"
 				>
 					<FontAwesomeIcon icon={['fab', 'twitter']} />
 				</a>
@@ -63,6 +67,7 @@ const Social: React.FC<SocialProps> = ({ social, className }) => {
 					href={`https://www.instagram.com/${instagram}`}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Instagram"
 				>
 					<FontAwesomeIcon icon={['fab', 'instagram']} />
 				</a>
@@ -72,17 +77,28 @@ const Social: React.FC<SocialProps> = ({ social, className }) => {
 					href={`https://www.telegram.me/${telegram}`}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Telegram"
 				>
 					<FontAwesomeIcon icon={['fab', 'telegram']} />
 				</a>
 			)}
 			{youtube && (
-				<a href={youtube} target="_blank" rel="noopener noreferrer">
+				<a
+					href={youtube}
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="YouTube"
+				>
 					<FontAwesomeIcon icon={['fab', 'youtube']} />
 				</a>
 			)}
 			{email && (
-				<a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+				<a
+					href={`mailto:${email}`}
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Email"
+				>
 					<FontAwesomeIcon icon={['fas', 'envelope']} />
 				</a>
 			)}

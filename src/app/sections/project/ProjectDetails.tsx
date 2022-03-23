@@ -39,7 +39,12 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 			</div>
 			{link && (
 				<div className={styles.project_link}>
-					<a href={link} target="_blank" rel="noopener noreferrer">
+					<a
+						href={link}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label={t('go_to_website')}
+					>
 						<FontAwesomeIcon icon={['fas', 'link']} />
 						{t('go_to_website')}
 					</a>
@@ -47,7 +52,12 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 			)}
 			{repository && (
 				<div className={styles.project_repository}>
-					<a href={repository} target="_blank" rel="noopener noreferrer">
+					<a
+						href={repository}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label={t('go_to_website')}
+					>
 						<FontAwesomeIcon icon={['fab', 'github']} />
 						{t('view_code')}
 					</a>

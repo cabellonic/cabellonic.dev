@@ -9,7 +9,7 @@ require('dotenv').config({
 module.exports = {
 	siteMetadata: {
 		site_name: `Cabellonic.dev`,
-		siteUrl: `https://cabellonic.dev/`,
+		siteUrl: `https://cabellonic.dev`,
 		image: '/images/Placeholder.webp',
 		author: {
 			name: `Nicolás Cabello`,
@@ -28,6 +28,8 @@ module.exports = {
 	},
 
 	plugins: [
+		`gatsby-plugin-fontawesome-css`,
+		`gatsby-plugin-robots-txt`,
 		`gatsby-transformer-json`,
 		'gatsby-transformer-sharp',
 		{
