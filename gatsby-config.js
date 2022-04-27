@@ -10,7 +10,7 @@ module.exports = {
 	siteMetadata: {
 		site_name: `Cabellonic.dev`,
 		siteUrl: `https://cabellonic.dev`,
-		image: '/images/Placeholder.webp',
+		image: '/images/placeholder.png',
 		author: {
 			name: `Nicolás Cabello`,
 			photo: `/images/photo.webp`,

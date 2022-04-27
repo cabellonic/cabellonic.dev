@@ -48,7 +48,7 @@ const Seo: React.FC<SeoProps> = ({ seo }) => {
 		},
 		{
 			name: 'author',
-			content: seo.author?.name || site.site_name,
+			content: site.author.name,
 		},
 		/*
 		 * TWITTER META
