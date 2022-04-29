@@ -6,7 +6,8 @@
 	margin: $spacing-4 auto;
 	gap: $spacing-4;
 
-	& > div {
+	& > div,
+	& > time {
 		background-color: $clr-secondary-lt;
 		padding: $spacing-3;
 	}
