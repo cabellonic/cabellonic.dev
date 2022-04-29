@@ -27,9 +27,9 @@ const ArticleHeader: React.FC<ArticleHeaderProps> = ({ article }) => {
 	return (
 		<header className={styles.article_header}>
 			<div className={styles.article_date}>
-				<span>
+				<time dateTime={date}>
 					<FontAwesomeIcon icon={['far', 'calendar-alt']} /> {formattedDate}
-				</span>
+				</time>
 				<span>
 					<FontAwesomeIcon icon={['far', 'clock']} /> {t('read_time')}{' '}
 					{timeToRead} {timeToRead > 1 ? t('minutes') : t('minute')}

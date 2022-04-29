@@ -27,9 +27,9 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 	return (
 		<section className={styles.project_details_wrapper}>
 			<h2 className={styles.project_details_title}>{t('project_details')}</h2>
-			<div className={styles.project_date}>
+			<time dateTime={date} className={styles.project_date}>
 				{t('date')}: {formattedDate}
-			</div>
+			</time>
 			<div className={styles.project_duration}>
 				{t('duration')}: {duration}
 			</div>
