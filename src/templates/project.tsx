@@ -21,13 +21,15 @@ const Project: React.FC<PageProps<ProjectProps, IPageContext>> = ({
 	pageContext,
 }) => {
 	const project = data.project
-	const { title, description, thumbnail } = project.frontmatter
+	const { title, description, thumbnail, date } = project.frontmatter
 
 	const seo: ISeo = {
 		title,
 		description,
 		image: thumbnail?.url,
 		language: pageContext.language,
+		type: 'article',
+		date,
 	}
 
 	return (

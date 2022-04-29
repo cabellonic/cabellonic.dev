@@ -24,13 +24,15 @@ const Article: React.FC<PageProps<ArticleProps, IPageContext>> = ({
 }) => {
 	const article = data.article
 	const tags = data.article.frontmatter.tags
-	const { title, excerpt, thumbnail } = article.frontmatter
+	const { title, excerpt, thumbnail, date } = article.frontmatter
 
 	const seo: ISeo = {
 		title,
 		description: excerpt || article.excerpt,
 		image: thumbnail?.url,
 		language: pageContext.language,
+		type: 'article',
+		date,
 	}
 
 	return (

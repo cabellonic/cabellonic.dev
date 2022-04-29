@@ -3,6 +3,8 @@ export interface ISeo {
 	language: string
 	description?: string
 	image?: string
+	type?: string
+	date?: string
 	author?: {
 		name?: string
 		twitter?: string

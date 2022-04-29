@@ -50,6 +50,14 @@ const Seo: React.FC<SeoProps> = ({ seo }) => {
 			name: 'author',
 			content: site.author.name,
 		},
+		{
+			name: 'og:type',
+			content: seo.type || 'website',
+		},
+		{
+			name: 'og:published_date',
+			content: seo.date || new Date().toISOString(),
+		},
 		/*
 		 * TWITTER META
 		 */
