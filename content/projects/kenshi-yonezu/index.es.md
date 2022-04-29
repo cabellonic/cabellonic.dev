@@ -1,6 +1,7 @@
 ---
 title: Portal Kenshi Yonezu
 description: "Inspirado en el famoso artista japonés Kenshi Yonezu, este sitio intenta recolectar y traducir todo su trabajo disponible en internet, así como las últimas noticias y entrevistas que haya hecho."
+date: "2022-02-14"
 thumbnail: kenshi-yonezu-thumbnail.webp
 techs: ["typescript", "react", "gatsby", "netlify", "contentful", "algolia"]
 duration: Dos semanas
