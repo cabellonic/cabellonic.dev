@@ -43,7 +43,7 @@ const Seo: React.FC<SeoProps> = ({ seo }) => {
 		},
 		{
 			name: `image`,
-			proparty: `og:image`,
+			property: `og:image`,
 			content: imagePath,
 		},
 		{
