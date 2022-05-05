@@ -6,8 +6,11 @@ import GatsbySVG from '@svg/GatsbySVG'
 import NetlifySVG from '@svg/NetlifySVG'
 import ContentfulSVG from '@svg/ContentfulSVG'
 import AlgoliaSVG from '@svg/AlgoliaSVG'
+import NodeSVG from '@svg/NodeSVG'
+import PostgresqlSVG from '@svg/PostgresqlSVG'
 // Styles
 import * as styles from './Techs.module.scss'
+import JavaScriptSVG from '@svg/JavaScriptSVG'
 
 type TechsProps = {
 	techs: string[]
@@ -23,7 +26,15 @@ const Techs: React.FC<TechsProps> = ({ techs }) => {
 							<span className={styles.tech_svg}>
 								<TypeScriptSVG />
 							</span>
-							<span>Typescript</span>
+							<span>TypeScript</span>
+						</div>
+					)}
+					{tech === 'javascript' && (
+						<div className={styles.tech}>
+							<span className={styles.tech_svg}>
+								<JavaScriptSVG />
+							</span>
+							<span>JavaScript</span>
 						</div>
 					)}
 					{tech === 'react' && (
@@ -32,6 +43,14 @@ const Techs: React.FC<TechsProps> = ({ techs }) => {
 								<ReactSVG />
 							</span>
 							<span>React.js</span>
+						</div>
+					)}
+					{tech === 'node' && (
+						<div className={styles.tech}>
+							<span className={styles.tech_svg}>
+								<NodeSVG />
+							</span>
+							<span>Node.js</span>
 						</div>
 					)}
 					{tech === 'gatsby' && (
@@ -64,6 +83,14 @@ const Techs: React.FC<TechsProps> = ({ techs }) => {
 								<AlgoliaSVG />
 							</span>
 							<span>Algolia</span>
+						</div>
+					)}
+					{tech === 'postgresql' && (
+						<div className={styles.tech}>
+							<span className={styles.tech_svg}>
+								<PostgresqlSVG />
+							</span>
+							<span>PostgreSQL</span>
 						</div>
 					)}
 				</React.Fragment>
